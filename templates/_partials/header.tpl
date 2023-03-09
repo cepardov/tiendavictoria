@@ -43,19 +43,9 @@
             <div class="row">
                 <div class="col-md-12 position-static">
                     <div class="hidden-sm-down" id="_desktop_logo">
-                        {if $page.page_name == 'index'}
-                            <h1>
-                                <a href="{$urls.base_url}">
-                                    <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
-                                </a>
-                            </h1>
-                        {else}
-                            <h1>
-                                <a href="{$urls.base_url}">
-                                    <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
-                                </a>
-                            </h1>
-                        {/if}
+                        <a href="{$urls.base_url}">
+                            {$shop.name}
+                        </a>
                     </div>
                     {hook h='displayTop'}
                     <div id="_desktop_setting-header">
