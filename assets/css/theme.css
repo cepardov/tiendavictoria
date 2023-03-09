@@ -21991,7 +21991,7 @@ main.boxed {
     }
 }
 #header {
-    background: #fff;
+    /*background: #fff;*/
     padding: 12px 0 16px;
     transition: all 0.3s ease;
 }
