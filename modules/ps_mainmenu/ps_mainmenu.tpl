@@ -36,21 +36,9 @@
                 {if $node.open_in_new_window} target="_blank" {/if}
               >
                   {if $depth < 1}
-                      {if $smarty.foreach.node.iteration == 4}
-                          <span class="label-menu-sale">{$smarty.foreach.node.iteration}{l s='Sale' d='Shop.Theme.Global'}</span>
+                      {if $node.label == 'Descuentos'}
+                          <span class="label-menu-sale">{l s='Sale' d='Shop.Theme.Global'}</span>
                       {/if}
-                      {if $smarty.foreach.node.iteration == 6}
-                            <span class="label-menu-hot">{l s='Hot' d='Shop.Theme.Global'}</span>
-                      {/if}
-                  {/if}
-                  {if {$node.page_identifier} == 'category-26'}
-                    <span class="label-menu-sale">{l s='Sale' d='Shop.Theme.Global'}</span>
-                  {/if}
-                  {if {$node.page_identifier} == 'category-40'}
-                    <span class="label-menu-new">{l s='New' d='Shop.Theme.Global'}</span>
-                  {/if}
-                  {if {$node.page_identifier} == 'category-47'}
-                    <span class="label-menu-hot">{l s='Hot' d='Shop.Theme.Global'}</span>
                   {/if}
                 {if $node.children|count}
                   {* Cannot use page identifier as we can have the same page several times *}
