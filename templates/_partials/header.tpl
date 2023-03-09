@@ -38,11 +38,11 @@
 {/block}
 
 {block name='header_top'}
-    <div class="header-top revealOnScroll animated fadeInUp rosado" data-animation="fadeInUp">
+    <div class="header-top revealOnScroll animated fadeInUp" data-animation="fadeInUp">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 position-static">
-                    <div class="hidden-sm-down" id="_desktop_logo">
+                    <div class="hidden-sm-down logo-text" id="_desktop_logo">
                         <a href="{$urls.base_url}">
                             {$shop.name}
                         </a>
