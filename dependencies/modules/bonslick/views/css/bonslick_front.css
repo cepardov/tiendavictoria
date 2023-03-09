@@ -1,0 +1,366 @@
+#bonslick #video-container .bonslick-caption h3, #bonslick #video-container .bonslick-caption h1, #bonslick #video-container .bonslick-caption p {
+    color: #fff;
+    text-shadow: 1px 1px 1px #444;
+}
+
+.bonslick-video {
+    width: 100%;
+    height: 100%;
+}
+
+#video-container > a > section > div > div{
+  background: transparent;
+  backdrop-filter: blur(0px);
+}
+
+.bonslick-caption {
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-left: 30px;
+  text-align: center;
+  padding: 300px 0;
+  background: rgba(250,250,250,0.6);
+  backdrop-filter: blur(3px);
+}
+
+#video-container #controls {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    z-index: 1000;
+}
+
+#video-container #controls .play,
+#video-container #controls .pause,
+#video-container #controls .mute,
+#video-container #controls .unmute {
+    font-size: 0px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+#video-container #controls .play:before,
+#video-container #controls .pause:before,
+#video-container #controls .mute:before,
+#video-container #controls .unmute:before{
+    font-family: 'Material Icons';
+    color: #fff;
+    font-size: 35px;
+    transition: all 0.3s linear;
+}
+
+#video-container #controls .play:hover,
+#video-container #controls .pause:hover,
+#video-container #controls .mute:hover,
+#video-container #controls .unmute:hover{
+    outline: none;
+    border: none;
+}
+
+#video-container #controls .play:focus,
+#video-container #controls .pause:focus,
+#video-container #controls .mute:focus,
+#video-container #controls .unmute:focus {
+    outline: none;
+}
+
+#video-container #controls .play:hover:before,
+#video-container #controls .pause:hover:before,
+#video-container #controls .mute:hover:before,
+#video-container #controls .unmute:hover:before{
+    cursor: pointer;
+    color: #282828;
+}
+
+#video-container #controls .play:before {
+    content: '\e037';
+}
+
+#video-container #controls .pause:before {
+    content: '\e034';
+}
+
+#video-container #controls .mute:before {
+    content: '\e04e';
+}
+
+#video-container #controls .unmute:before{
+    content:'\e04f';
+}
+
+#bonslick .slick-dotted.bonslick-slider {
+  margin-bottom: 0;
+}
+
+#bonslick .slick-dots {
+  bottom: 20px;
+}
+
+#bonslick {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-slider:focus, a {
+   outline: none;
+}
+
+#bonslick .box-bonslick {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  width: 90%;
+}
+
+#bonslick .slick-slide img {
+  width: 100%;
+}
+
+#bonslick .link-bonslick {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+#bonslick .link-bonslick:focus {
+  outline: none;
+}
+
+.box-bonslick h1 {
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  transform: translateY(-200%);
+  transition: all 1s ease-in-out 0.7s;
+  opacity: 0;
+  color: #363636;
+}
+
+.box-bonslick h3 {
+  color: #333;
+  font-size: 33px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  transform: translateY(-200%);
+  transition: all 1s ease-in-out 0.9s;
+  opacity: 0;
+}
+
+.box-bonslick p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    transform: translateY(-200%);
+    transition: all 1s ease-in-out 0.5s;
+    opacity: 0;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+
+#bonslick .box-bonslick span {
+    background: #444444;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 32px;
+    transition: all ease .2s;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.14);
+}
+
+#bonslick .box-bonslick span:hover {
+    background: #282828;
+    box-shadow: none;
+}
+
+.slick-slide.slick-active .box-bonslick h1,
+.slick-slide.slick-active .box-bonslick h3,
+.slick-slide.slick-active .box-bonslick span,
+.slick-slide.slick-active .box-bonslick p{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.box-bonslick.slick-boxed .bonslick-caption  h1 {
+    font-size: 40px;
+}
+.box-bonslick.slick-boxed .bonslick-caption h3 {
+    font-size: 25px;
+}
+.box-bonslick.slick-boxed .bonslick-caption p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.box-bonslick.slick-boxed .bonslick-caption span {
+    padding: 11px 40px;
+    font-size: 14px;
+}
+
+#bonslick .slick-next,
+#bonslick .slick-prev {
+  transition: all .3s ease;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+}
+
+#bonslick .slick-next {
+  right: 5px;
+}
+
+#bonslick .slick-prev {
+  left: 5px;
+}
+
+#bonslick:hover .slick-next{
+  right: 30px;
+  opacity: 1;
+}
+
+#bonslick:hover .slick-prev {
+  left: 30px;
+  opacity: 1;
+}
+
+#bonslick .slick-dots li.slick-active button:before{
+  color: #444444;
+}
+#bonslick .slick-dots li button:hover:before, #bonslick .slick-dots li button:focus:before{
+  color: #282828;
+}
+
+#bonslick .slick-next.white-arrow:before,
+#bonslick .slick-prev.white-arrow:before {
+    color:#fff;
+}
+
+#bonslick .slick-next:before,
+#bonslick .slick-prev:before {
+ font-family: "Mercury";
+  color: #fff;
+  font-size: 50px;
+  transition: all .3s ease;
+}
+#bonslick .slick-next:hover:before,
+#bonslick .slick-prev:hover:before{
+  color: rgb(185, 185, 185);
+}
+#bonslick .slick-prev:before {
+ content:  '\e802';
+}
+#bonslick .slick-next:before {
+ content: '\e804';
+}
+
+#bonslick .slick-dots li button:before {
+  font-size: 14px;
+  transition: all .3s ease;
+}
+
+#bonslick  .slick-dots li {
+  margin: 0 3px;
+}
+
+#bonslick .slick-prev.slick-disabled:before,
+#bonslick .slick-next.slick-disabled:before {
+ opacity: 1;
+}
+
+#bonslick #video-container {
+    width: 100%;
+}
+
+@media(min-width: 1025px) and (max-width: 1280px) {
+ .box-bonslick h1 {
+   font-size: 40px;
+ }
+ .box-bonslick h3 {
+   font-size: 25px;
+ }
+ .box-bonslick p {
+   font-size: 13px;
+   margin-bottom: 30px;
+ }
+ .box-bonslick span {
+   padding: 11px 40px;
+ }
+}
+
+@media(min-width: 992px) and (max-width: 1024px) {
+    .box-bonslick h1 {
+        font-size: 26px;
+    }
+    .box-bonslick h3 {
+        font-size: 21px;
+    }
+    .box-bonslick p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .box-bonslick span {
+        padding: 11px 35px;
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+ #bonslick .slick-next:before,
+ #bonslick .slick-prev:before {
+     font-size: 40px;
+ }
+ #bonslick .box-bonslick h1 {
+   font-size: 23px;
+     margin-bottom: 20px;
+ }
+ #bonslick .box-bonslick h3 {
+   font-size: 19px;
+ }
+
+}
+@media (max-width: 767px) {
+    #bonslick {
+        margin-bottom: 20px;
+    }
+    .box-bonslick h1 {
+      font-size: 20px;
+    }
+    .box-bonslick h3 {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+    .box-bonslick p {
+      display: none;
+    }
+    #bonslick .slick-dots {
+      bottom: 14px;
+    }
+    #bonslick .slick-dots li{
+      width: 20px;
+      height: 3px;
+      margin: 0 7px;
+    }
+    #bonslick .slick-dots li button:before{
+      content: '';
+    }
+    #bonslick .slick-dots li button {
+      width: 20px;
+      height: 3px;
+      opacity: .25;
+      background: black;
+      padding: 0;
+    }
+    #bonslick .slick-dots li.slick-active button{
+      opacity: .75;
+    }
+}
+@media (max-width: 480px) {
+  #bonslick .box-bonslick {
+    left: 15%;
+}
+}

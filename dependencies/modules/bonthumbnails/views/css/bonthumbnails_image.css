@@ -1,0 +1,31 @@
+.bonthumbnails {
+    margin: 0;
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 96px;
+}
+
+.bonthumbnails li {
+    margin: 0 0 10px;
+    transition: all .2s linear;
+}
+.bonthumbnails li:last-child {
+    margin-bottom: 0;
+}
+.bonthumbnails li a {
+    display: block;
+}
+.bonthumbnails li img {
+    position: relative;
+    z-index: -2;
+}
+.bonthumbnails li:hover,
+.bonthumbnails li:focus{
+    box-shadow: inset 0 0 0 2px #444444;
+}
+
+.bonthumbnails li.active {
+    box-shadow: inset 0 0 0 2px #444444;
+}

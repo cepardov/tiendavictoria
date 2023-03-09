@@ -1,0 +1,150 @@
+.bon-newsletter {
+  display: none;
+  background-size: cover;
+  background-color: #fff;
+  position: absolute;
+  min-width: 750px;
+  top: 50%;
+  right: 50%;
+  padding: 0;
+  left: 50%;
+  width: 34%;
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+
+.bon-newsletter .form-group {
+  margin-bottom: 20px;
+}
+
+.bon-newsletter .image-newsletter,
+.bon-newsletter .box-newsletter {
+  padding: 0;
+  text-align: center;
+}
+/*.bon-newsletter .image-newsletter {*/
+/*  width: 50%;*/
+/*  float: left;*/
+/*}*/
+
+.newsletter-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bon-newsletter-coupon {
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px dashed rgba(0,0,0,.125);
+}
+
+.bon-newsletter-coupon p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.bon-newsletter-coupon:before {
+  content: '\e015';
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  font-family: "fl-outicons";
+  color: #3a3a3a;
+  opacity: 0.75;
+  transform: rotate(90deg);
+  font-size: 22px;
+}
+
+.newsletter-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.newsletter-content p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.bon-newsletter .bon-newsletter-dont:hover {
+  color: #333!important;
+}
+
+.bon-newsletter .innerbox-newsletter {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); */
+  width: 90%;
+  padding: 0 37px;
+}
+
+/*.bon-newsletter .bon-newsletter-wrapper{*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
+
+.bon-newsletter .bon-newsletter-content {
+  position: static;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*width: 50%;*/
+}
+
+.bon-newsletter .bon-newsletter-dont {
+  transition: all 0.3s ease-in-out;
+}
+
+.bon-newsletter-link {
+  display: block;
+}
+
+.bon_newsletter_email.act {
+  border: 1px solid red;
+}
+
+.bon-newsletter .input-wrapper {
+  overflow: hidden;
+}
+.bon-newsletter .image-newsletter img{
+  width: 100%;
+}
+@media screen and (max-width: 767px){
+  .bon-newsletter{
+    min-width: 98%;
+  }
+  .bon-newsletter .innerbox-newsletter {
+    width: 100%;
+    padding: 0;
+}
+ }
+@media (max-width: 991px) {
+  .bon-newsletter .image-newsletter {
+    display: none!important;
+  }
+  .bon-newsletter .bon-newsletter-content {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .bon-newsletter .form-group {
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 1024px){
+  .bon-newsletter .popup-close {
+    top:4px;
+  }
+ }

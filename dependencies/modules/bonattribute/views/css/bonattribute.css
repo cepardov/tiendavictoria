@@ -1,0 +1,92 @@
+#bonattribute{
+    display: none;
+}
+
+.thumbnail-container:hover #bonattribute{
+    display: block;
+}
+
+#bonattribute .bonattribute-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-height: 87px;
+    overflow: auto;
+}
+
+#bonattribute .bonattribute-box{
+    margin: 0 5px 10px;
+}
+#bonattribute .bonattribute-box select{
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.14);
+}
+
+#bonattribute .bonattribute-btn.radio,
+#bonattribute .bonattribute-btn.select {
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 14%);
+    background: #fff;
+    white-space: unset;
+    font-weight: 400;
+    min-width: 33px;;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.125);
+    transition: all .3s linear;
+}
+
+#bonattribute .bonattribute-box .bon-attribute-disabled,
+#bonattribute .bonattribute-box .bon-attribute-disabled:hover{
+    border-color: transparent;
+    box-shadow: none;
+    color: rgba(16, 16, 16, 0.3), white;
+}
+
+
+
+#bonattribute .bonattribute-box .active,
+#bonattribute .bonattribute-btn:hover{
+    border-color: #3a3a3a;
+    box-shadow: none;
+    color: #3a3a3a;
+}
+
+#bonattribute .bonattribute-btn.color{
+    margin: 0;
+}
+
+#bonattribute .bon-attribute-disabled{
+    position: relative;
+}
+
+
+#bonattribute .bon-attribute-disabled:before, 
+#bonattribute .bon-attribute-disabled:before {
+    content: '';
+    background-image: linear-gradient(to bottom left, transparent 50%, #b2b2b2 50%, #b2b2b2 calc(50% + 1px), transparent 50%), linear-gradient(to bottom right, transparent 50%, #b2b2b2 50%, #b2b2b2 calc(50% + 1px), transparent 50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 620px){
+    #bonattribute .bonattribute-btn.radio, #bonattribute .bonattribute-btn.select{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #bonattribute .bonattribute-btn.radio, #bonattribute .bonattribute-btn.select{
+        white-space: unset;
+    }
+}
+
+
+

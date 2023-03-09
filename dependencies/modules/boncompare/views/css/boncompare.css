@@ -1,0 +1,432 @@
+.boncompare-hook-wrapper .compare-button {
+    z-index: 5;
+    position: absolute;
+    cursor: pointer;
+    top: 46px;
+    right: 12px;
+}
+
+.boncompare-icon {
+    stroke: #3a3a3a;
+    transition: all .3s linear;
+}
+
+#boncompare .compare-tooltip:hover .boncompare-icon {
+    stroke: #3a3a3a;
+}
+
+.boncompare-hook-wrapper .compare-button {
+    animation: pulsefascompar 1s ease;
+}
+
+.boncompare-hook-wrapper .compare-button .boncompare-icon {
+    stroke: #686868;
+}
+
+.boncompare-hook-wrapper .compare-button.active .boncompare-icon.round {
+    fill: #686868;
+}
+
+.boncompare-hook-wrapper .compare-button.active {
+    animation: pulsefarcompar 1s ease;
+}
+
+
+.quickview .boncompare-hook-wrapper {
+    display: none;
+}
+
+#boncompare .compare-tooltip {
+    transition: all .3s linear;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 14px;
+    right: 75px;
+    cursor: pointer;
+}
+
+#boncompare .compare-tooltip:hover span{
+    color: #fff;
+}
+
+#boncompare .compare-count {
+    position: absolute;
+    right: -19px;
+    top: -12px;
+    background: #3a3a3a;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .14);
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    transition: all .2s linear;
+}
+
+
+#boncompare-popup .modal-body {
+    overflow-y: auto;
+}
+
+#boncompare-popup .div-table-row {
+    display: flex;
+    align-items: stretch;
+}
+
+#boncompare-popup .div-table {
+    display: table;
+    width: auto;
+}
+
+#boncompare-popup .div-table-row:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#boncompare-popup .div-table-row:first-child {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.3);
+    background-color: #fff;
+}
+
+#boncompare-popup .div-table-col {
+    width: 235px;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+#boncompare-popup .div-table-col.boncompare-features {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+#boncompare-popup .div-table-col:not(.boncompare-features) {
+    text-align: center;
+}
+
+#boncompare-popup .div-table-col:not(:last-child) {
+    border-right: 1px solid rgba(230, 230, 230, 0.3);
+}
+
+#boncompare-popup .div-table-col h5 {
+    font-size: 15px;
+}
+
+#boncompare-popup .div-table-col h5,
+#boncompare-popup .div-table-col p {
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+#boncompare-popup img.img-responsive {
+    width: 100%;
+}
+
+#boncompare-popup .main-info {
+    position: relative;
+}
+
+#boncompare-popup .wish-button.active {
+    background-size: 17px 17px;
+}
+
+#boncompare-popup h6.product-title {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 15px 0;
+    transition: all .3s ease;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boncompare-popup .product-title:hover,
+#boncompare-popup .compare_add_to_cart_button:hover i {
+    color: #3a3a3a;
+}
+
+#boncompare-popup .no-compare {
+    text-align: center;
+}
+
+#boncompare-popup .no-compare h6 {
+    font-size: 16px;
+    margin: 26px 10px 0px 10px;
+}
+
+#boncompare-popup .compare-summary-product-price .price,
+#boncompare-popup .compare-summary-product-price .price.has-discount {
+    font-size: 14px;
+    color: #3a3a3a;
+}
+
+#boncompare-popup .compare-summary-product-price .regular-price {
+    font-size: 13px;
+    color: #3a3a3a;
+}
+
+#boncompare-popup .compare-summary-product-price .price.has-discount {
+    color: #ff4c4c;
+}
+
+#boncompare-popup .compare-button-delete {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 23px;
+    top: 13px;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+#boncompare-popup .compare-button-delete:after {
+    content: '\e5cd';
+    font-family: "Material Icons";
+    font-size: 17px;
+    color: #cac8c8;
+}
+
+#boncompare-popup .compare-button-delete:hover:after {
+    color: #afacac;
+}
+
+#boncompare-popup .product-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0 8px;
+    align-items: center;
+}
+
+#boncompare-popup .comments_note {
+    width: auto;
+}
+
+#boncompare-popup .comments_scroll {
+    display: flex;
+    justify-content: space-between;
+    cursor: unset;
+}
+
+#boncompare-popup .comments_scroll .star_content,
+#boncompare-popup .compare_add_to_cart {
+    display: flex;
+}
+
+#boncompare-popup .comments_note a span:hover {
+    color: unset;
+}
+
+#boncompare-popup .compare_add_to_cart_button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-left: 0;
+    outline: none;
+}
+
+#boncompare-popup .bonwishlist-hook-wrapper {
+    padding: 0 10px;
+}
+
+#boncompare-popup .bonwishlist-hook-wrapper .wish-button {
+    position: unset;
+    font-size: 17px;
+    vertical-align: -4px;
+}
+
+#boncompare-popup .compare_add_to_cart_button i:before {
+    font-family: 'fl-outicons';
+    font-size: 18px;
+}
+
+#boncompare-popup .compare_add_to_cart_button i {
+    transition: all .2s linear;
+}
+
+#boncompare-popup .popup-close {
+    right: 4px;
+    top: 12px;
+}
+
+#boncompare-popup .popup-close:after {
+    color: #d0d0d0;
+}
+
+#boncompare-popup .popup-close:hover:after {
+    color: #b3afaf;
+}
+
+#boncompare-popup .modal-body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#boncompare-popup .title {
+    background-color: #F5F5F5;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.34);
+    font-size: 18px;
+    color: #3a3a3a;
+    margin: 0;
+    text-align: center;
+}
+
+#boncompare-popup .compare-attr span:last-child {
+    display: none;
+}
+
+@media (max-height: 800px) {
+    #boncompare-popup .modal-dialog-centered {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    #boncompare-popup .modal-body {
+        max-width: 540px;
+        max-height: calc(100vh - 150px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #boncompare-popup .modal-body {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #boncompare-popup .modal-body {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .thumbnail-container .boncompare-hook-wrapper {
+        display: none;
+    }
+
+    #category .products-grid.active .product-one .thumbnail-container .thumbnail-container-inner .thumbnail-container-images .product-thumbnail .boncompare-hook-wrapper {
+        display: block;
+    }
+
+    #boncompare-popup .modal-body {
+        max-height: 800px;
+        max-width: 1260px;
+    }
+
+    .thumbnail-container:hover .boncompare-hook-wrapper {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    #boncompare-popup .compare-button-delete {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #boncompare-popup .div-table {
+        margin: 0 auto;
+    }
+
+    #boncompare-popup .div-table-col.boncompare-features {
+        display: none;
+    }
+
+    #boncompare-popup .div-table-col {
+        width: 160px;
+        padding: 10px;
+    }
+
+    #boncompare-popup .div-table-col h5 {
+        font-size: 14px;
+    }
+
+    #boncompare-popup .comments_scroll span {
+        display: none;
+    }
+
+    #boncompare-popup .product-info {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #boncompare-popup .compare_add_to_cart {
+        padding-top: 3px;
+    }
+
+    #boncompare-popup .comments_scroll {
+        justify-content: center;
+    }
+
+    body #boncompare-popup .modal-dialog {
+        margin: 30px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #boncompare .compare-tooltip {
+        top: -29px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    body #boncompare-popup .modal-dialog {
+        display: inherit;
+    }
+
+    #boncompare-popup .div-table-col {
+        width: 140px;
+    }
+
+    #boncompare-popup .product-flags {
+        display: none;
+    }
+
+    #boncompare-popup h6.product-title {
+        font-size: 13px;
+    }
+
+    #boncompare-popup .div-table-col {
+        font-size: 12px;
+    }
+
+    #boncompare-popup .div-table-row:nth-child(odd) {
+        background-color: #fff;
+    }
+}
+
+@keyframes pulsefarcompar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsefascompar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

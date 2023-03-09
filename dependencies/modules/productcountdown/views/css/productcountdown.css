@@ -1,0 +1,58 @@
+.productcountdown {
+    display: inline-block;
+    text-align: center;
+}
+.product-page-right .productcountdown{
+    padding: 15px 0 15px;
+}
+.product-miniature .productcountdown {
+    position: absolute;
+    width: 100%;
+    top: 87%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.productcountdown > div > span {
+    margin-right: 8px;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255,  0.82);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    color: #777777;
+    font-size: 13px;
+
+}
+
+.productcountdown > div > span:last-child{
+    margin: 0;
+}
+
+.productcountdown > div > span > span {
+    display: block;
+}
+
+.productcountdown > div > span > span:first-child {
+    color: #3a3a3a;
+    font-weight: normal;
+    font-size: 13px;
+    margin-bottom: -3px;
+}
+
+.productcountdown h3 {
+    color: #f44848;
+}
+@media screen and (max-width: 1280px) {
+    .product-miniature .productcountdown {
+        top:66%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .product-miniature .productcountdown {
+        top: 72%;
+        left: 38%;
+    }
+}
+
