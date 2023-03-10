@@ -1,3 +1,7 @@
 #header .logo {
     max-height: 40px;
 }
+
+#header, #header .header-top {
+    background-color: #ee6e73 !important;
+}
