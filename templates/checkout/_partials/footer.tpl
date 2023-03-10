@@ -49,7 +49,7 @@
     <div class="row">
       {block name='copyright_link'}
         <div class="col-sm-12 col-md-6">
-          <a class="_blank" href="http://www.prestashop.com" target="_blank">
+          <a class="_blank" href="{$urls.base_url}" target="_blank">
             {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
           </a>
         </div>
