@@ -9,3 +9,7 @@
 .logo-text > a {
     color: red;
 }
+
+#header #_desktop_logo {
+    color: red !important;
+}
