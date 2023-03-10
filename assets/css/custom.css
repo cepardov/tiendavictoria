@@ -10,6 +10,10 @@
 
 }
 
+#header, #header .header-top {
+    color: #ee6e73;
+}
+
 #header #_desktop_logo a {
     color: red !important;
     font-size: 2rem;
