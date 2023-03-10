@@ -6,12 +6,8 @@
     border: 1px solid red;
 }
 
-#header #_desktop_logo {
-
-}
-
 #header, #header .header-top {
-    background-color: #ee6e73;
+    background-color: #ee6e73 !important;
 }
 
 #header #_desktop_logo a {
