@@ -48,7 +48,7 @@
 {if isset($theme_color_enable) && $theme_color_enable}
     <style>
         #boncompare .compare-count {
-            background: {$theme_color|escape: 'html':'UTF-8'};
+            background: {$theme_color|escape: 'html':'UTF-8'} !important;
         }
     </style>
 {/if}
