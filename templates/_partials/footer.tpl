@@ -41,9 +41,9 @@
     <div class="row">
       {block name='copyright_link'}
         <div class="col-sm-12 revealOnScroll animated fadeInUp" data-animation="fadeInUp">
-          <a class="_blank" href="{$urls.base_url}" target="_blank">
+          <p>
             {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-          </a>
+          </p>
         </div>
         {/block}
     </div>
