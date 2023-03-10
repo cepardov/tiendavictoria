@@ -5,3 +5,9 @@
 #header, #header .header-top {
     background-color: #ee6e73 !important;
 }
+
+#header #_desktop_logo {
+    position: absolute;
+    left: 15px;
+    top: 5px !important;
+}
