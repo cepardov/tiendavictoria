@@ -68,7 +68,7 @@
  #product-button .btn_prev span,
  #product-button .btn_next span {
    color: #b2b2b2;
-   font-size: 12px;
+   font-size: 1em;;
  }
 
  #product-button .next-product-button {
