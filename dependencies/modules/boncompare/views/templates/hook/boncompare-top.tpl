@@ -44,3 +44,11 @@
         </a>
     </div>
 </div>
+
+{if isset($theme_color_enable) && $theme_color_enable}
+    <style>
+        #boncompare .compare-count {
+            background: {$theme_color|escape: 'html':'UTF-8'};
+        }
+    </style>
+{/if}
