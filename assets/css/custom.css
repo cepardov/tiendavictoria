@@ -11,7 +11,7 @@
 }
 
 #header, #header .header-top {
-    color: #ee6e73;
+    background-color: #ee6e73 !important;
 }
 
 #header #_desktop_logo a {
