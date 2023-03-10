@@ -8,10 +8,18 @@
     <nav class="header-nav">
         <div class="container">
             <div class="row">
-                <div class="logo-text" id="_mobile_logo">
-                    <a href="{$urls.base_url}">
-                        {$shop.name}
-                    </a>
+                <div class="" id="_mobile_logo">
+                    {if $page.page_name == 'index'}
+                        <h1>
+                            <a href="{$urls.base_url}">
+                                <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+                            </a>
+                        </h1>
+                    {else}
+                        <a href="{$urls.base_url}">
+                            <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+                        </a>
+                    {/if}
                 </div>
                 <div class="hidden-sm-down">
                     <div class="col-md-5 col-xs-12">
@@ -42,10 +50,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 position-static">
-                    <div class="hidden-sm-down logo-text" id="_desktop_logo">
-                        <a href="{$urls.base_url}">
-                            {$shop.name}
-                        </a>
+                    <div class="hidden-sm-down" id="_desktop_logo">
+                        {if $page.page_name == 'index'}
+                            <h1>
+                                <a href="{$urls.base_url}">
+                                    <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+                                </a>
+                            </h1>
+                        {else}
+                            <h1>
+                                <a href="{$urls.base_url}">
+                                    <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+                                </a>
+                            </h1>
+                        {/if}
                     </div>
                     {hook h='displayTop'}
                     <div id="_desktop_setting-header">
