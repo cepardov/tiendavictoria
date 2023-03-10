@@ -8,7 +8,7 @@
     <nav class="header-nav">
         <div class="container">
             <div class="row">
-                <div class="" id="_mobile_logo">
+                <div class="logo-text" id="_mobile_logo">
                     <a href="{$urls.base_url}">
                         {$shop.name}
                     </a>

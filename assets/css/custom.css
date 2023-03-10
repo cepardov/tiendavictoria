@@ -6,6 +6,6 @@
     border: 1px solid red;
 }
 
-.logo-text {
+.logo-text > a {
     color: red;
 }
