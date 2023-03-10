@@ -9,7 +9,6 @@
         <div class="container">
             <div class="row">
                 <div class="logo-text" id="_mobile_logo">
-                    <i class="material-icons diamond">&#xead5;</i>
                     <a href="{$urls.base_url}">
                         {$shop.name}
                     </a>
@@ -44,7 +43,6 @@
             <div class="row">
                 <div class="col-md-12 position-static">
                     <div class="hidden-sm-down logo-text" id="_desktop_logo">
-                        <i class="material-icons diamond">&#xead5;</i>
                         <a href="{$urls.base_url}">
                             {$shop.name}
                         </a>
